@@ -1,0 +1,46 @@
+@import './Variables.scss';
+
+#root {
+	background-color: $color-purple-dark;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.menu {
+	background-color: $color-purple;
+	padding: 15px 20px;
+	width: fit-content;
+	line-height: 0;
+
+	.menu__list {
+		color: $color-gray;
+		padding: 0;
+		text-transform: uppercase;
+		display: flex;
+		gap: 20px;
+		list-style: none;
+
+		.menu__item {
+
+			.menu__link {
+				color: inherit;
+			}
+
+			.menu__link--active {
+				color: $color-white;
+			}
+		}
+	}
+}
+
+.outlet {
+	background-color: $color-purple;
+	box-sizing: border-box;
+	margin-top: 20px;
+	padding: 20px;
+	max-width: 500px;
+	width: 100%;
+	text-align: left;
+}
